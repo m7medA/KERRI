@@ -14,6 +14,13 @@ section {
   width: 100%;
   margin: auto;
 }
+.section{
+  transition: all 1s;
+}
+.section.section-transition{
+  transform: translateY(8rem);
+  opacity: 0;
+}
 
 svg {
   color: var(--second-color);
@@ -48,6 +55,7 @@ p {
 }
 
 /* landing */
+
 /* header */
 .landing {
   background-color: var(--main-color);
@@ -56,11 +64,9 @@ p {
   background-color: var(--main-color);
   font-size: 1.1rem;
 }
-
 .landing .nav-landing li a:hover {
   color: var(--second-color) !important;
 }
-
 .button_nav_bar a {
   background-color: var(--second-color);
   font-size: 1.2rem;
@@ -87,9 +93,16 @@ p {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
   transform: translateY(4px);
 }
+/*for js*/
+.landing .navbar.sticky{
+  background-color:#37517ede;
+}
+.landing .navbar .active-anchor{
+  color: var(--second-color) !important;
+}
+/*for js*/
 
 /*responsive*/
-
 @media (max-width: 991px) {
   .header .navbar .navbar-nav a {
     color: black !important;
@@ -120,6 +133,7 @@ p {
   }
 }
 /*header*/
+
 /*homapage*/
 .landing .homePage {
   margin-top: 88px;
@@ -133,15 +147,42 @@ p {
 .homePage .btn-group > :first-child:hover {
   background-color: #47b2d1;
 }
-
-.homePage .vidoe-player:hover {
+.homePage .video-player{
+  background-color: inherit;
+  transition: all 0.3s ;
+}
+.homePage .video-player svg{
+  color: white !important;
+  transition: all 0.3s ;
+}
+.homePage .video-player:hover svg{
   color: var(--second-color) !important;
 }
-
+.homePage .video-player:hover{
+  color: var(--second-color) !important;
+}
 .homePage .img-homepage {
   animation: transitionX 3s ease-in-out infinite;
 }
 
+/*for js*/
+.text-homepage{
+  transition: all 0.15s;
+}
+.text-homepage.homePage-transition{
+  scale: 1.2;
+  opacity: 0;
+}
+.img-homepage{
+  transition: all 0.4s;
+}
+.img-homepage.homePage-transition{
+  scale: 1.1;
+  opacity: 0;
+}
+/*for js*/
+
+/*responsive*/
 @keyframes transitionX {
   0% {
     transform: translateY(0px);
@@ -153,10 +194,9 @@ p {
     transform: translateY(0px);
   }
 }
-/*responsive*/
 @media (max-width: 991px) {
   .landing .homePage {
-    margin-top: 50px;
+    padding-top: 1rem;
   }
 
   .homePage .text-homepage a {
@@ -167,19 +207,18 @@ p {
 @media (max-width: 786px) {
   .landing .homePage {
     margin-top: 61px;
+    padding: 1rem 1rem !important;
   }
-  .homePage .text-homepage h1 {
-    font-size: 24px !important;
-  }
-  .homePage .text-homepage p {
-    font-size: 16px !important;
-  }
-
+  .homePage .text-homepage h3 {
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+  } 
   .homePage .text-homepage a {
     font-size: 16px !important;
   }
 }
 /*homapage*/
+
 /*section2*/
 .section--2 .section2-nav {
   background-color: #eee;
@@ -211,7 +250,9 @@ p {
   .section--2 .section2-nav li {
     width: 30%;
   }
-
+  .text-section-2{
+    padding: 0.8rem 2rem !important;
+  }
   .section2-nav .nav-item:nth-child(1),
   .section2-nav .nav-item:nth-child(2) {
     display: none;

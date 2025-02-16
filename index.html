@@ -17,10 +17,10 @@
   </head>
   <body>
     <div class="contianer">
-      <section class="landing">
+      <section class="landing" id="landing">
         <header class="header px-5">
           <!-- nav bar -->
-          <nav class="navbar fixed-top navbar-expand-lg px-5">
+          <nav class="navbar fixed-top navbar-expand-lg px-5" id="stickyNav">
             <div class="container-fluid">
               <!-- logo -->
               <a class="navbar-brand" href="#"
@@ -60,23 +60,23 @@
                   >
                     <li class="nav-item">
                       <a
-                        class="nav-link text-light active"
+                        class="nav-link text-light active-anchor"
                         aria-current="page"
-                        href="#"
+                        href="#landing"
                         >Home</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-light" href="#">About</a>
+                      <a class="nav-link text-light" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-light" href="#">Services</a>
+                      <a class="nav-link text-light" href="#Services">Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-light" href="#">Portfolio</a>
+                      <a class="nav-link text-light" href="#Portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-light" href="#">Team</a>
+                      <a class="nav-link text-light" href="#Team">Team</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a
@@ -117,7 +117,7 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-light" href="#">Contact</a>
+                      <a class="nav-link text-light" href="#Contact">Contact</a>
                     </li>
                   </ul>
                   <div class="button_nav_bar d-flex align-content-center">
@@ -130,40 +130,22 @@
             </div>
           </nav>
         </header>
-        <div class="homePage p-lg-5 py-4 px-4">
-          <div class="row">
-            <div
-              class="text-homepage col-lg-5 d-flex flex-column justify-content-center align-items-start order-2 order-lg-1"
-            >
-              <h1 class="text-light fs-1" style="font-weight: bold">
-                Better Solutions For Your Business
-              </h1>
-              <p
-                class="fs-4 fa-bold py-2"
-                style="color: gray; font-weight: bold"
-              >
-                We are team of talented designers making websites with Bootstrap
-              </p>
-              <div
-                class="btn-group gap-3"
-                role="group"
-                aria-label="Basic example"
-              >
-                <a
-                  class="text-light btn rounded-pill px-3 fs-4 fa-bold"
-                  href="#"
-                  >Get Start</a
-                >
-                <a
-                  class="vidoe-player text-light btn rounded-pill fs-4 fa-bold d-flex gap-2"
-                  href="#"
-                  ><span><i class="fa-regular fa-circle-play"></i></span> Watch
-                  Video</a
-                >
+        <div class="homePage p-5 pt-4">
+          <div class="row w-100 m-auto">
+            <div id="text-homepage" class="text-homepage homePage-transition d-flex flex-column justify-content-center col-lg-6 order-2 order-lg-0">
+              <h1 style="color: white;">Better Solutions For Your Business</h1>
+              <h3 style="color: #b4b2b2;" class="py-4">We are team of talented designers making websites with Bootstrap</h3>
+              <div class="button_nav_bar d-flex justify-content-start align-content-center">
+                <a class="text-light btn rounded-pill px-3" href="#">
+                  Get Start
+                </a>
+                <a class="text-light btn video-player rounded-pill mx-4 d-flex align-content-center justify-content-center" style="background-color: transparent !important; box-shadow: none;" href="#">
+                  <span><i class="fa-regular fa-circle-play p-1 me-2" style="scale: 1.4;"></i></span> Watch Video
+                </a>
               </div>
             </div>
             <div
-              class="img-homepage col-lg-6 container-fluid order-1 order-lg-2 p-lg-0 py-5"
+              id="img-homepage" class="img-homepage homePage-transition col-lg-6 container-fluid order-1 order-lg-2 p-lg-0 py-5"
             >
               <img
                 src="images/hero-img.png"
@@ -175,7 +157,7 @@
         </div>
       </section>
 
-      <section class="section--2">
+      <section class="section section-transition section--2" id="About">
         <ul
           class="section2-nav nav d-flex justify-content-evenly flex-nowrap overflow-hidden"
         >
@@ -239,7 +221,7 @@
         </div>
       </section>
 
-      <section class="section--3">
+      <section class="section section-transition section--3">
         <div class="row w-100 m-auto">
           <!-- Accordion -->
           <div class="col-lg-6 p-5 order-2 order-lg-1 land-section-3">
@@ -358,7 +340,7 @@
         </div>
       </section>
 
-      <section class="section--4">
+      <section class="section section-transition section--4">
         <div class="row w-100 m-auto">
           <div
             class="col-lg-6 p-lg-5 container-fluid m-auto d-flex justify-content-center land-section-4"
@@ -387,7 +369,7 @@
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style="width: 100%"></div>
+                <div class="progress-bar" style="width: 100%; background-color: var(--main-color);"></div>
               </div>
             </div>
             <div class="prog py-2">
@@ -400,7 +382,7 @@
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style="width: 90%"></div>
+                <div class="progress-bar" style="width: 90%; background-color: var(--main-color);"></div>
               </div>
             </div>
             <div class="prog py-2">
@@ -413,7 +395,7 @@
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style="width: 70%"></div>
+                <div class="progress-bar" style="width: 70%; background-color: var(--main-color);"></div>
               </div>
             </div>
             <div class="prog py-2">
@@ -426,14 +408,14 @@
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style="width: 55%"></div>
+                <div class="progress-bar" style="width: 55%; background-color: var(--main-color);"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section--5">
+      <section class="section section-transition section--5" id="Services">
         <div class="row w-100 m-auto p-4">
           <div
             class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
@@ -496,7 +478,7 @@
         </div>
       </section>
 
-      <section class="section--6">
+      <section class="section section-transition section--6">
         <div
           class="img-section-6 row w-100 m-auto p-lg-4 p-md-5 position-relative"
         >
@@ -524,7 +506,7 @@
         </div>
       </section>
 
-      <section class="section--7">
+      <section class="section section-transition section--7" id="Portfolio">
         <div class="row w-100 m-auto p-lg-4 p-md-5">
           <div
             class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
@@ -554,135 +536,137 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="img-potfolio position-relative overflow-hidden">
-              <img
-                src="images/portfolio-1.jpg"
-                class="img-thumbnail img-fluid
-                alt="..."
-              />
-              <div
-                class="img-portfolio-text p-2 bg-light position-absolute w-100"
-              >
-                <h5 style="color: var(--main-color)">App1</h5>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="img-potfolio position-relative overflow-hidden my-4">
-              <img
-                src="images/portfolio-2.jpg"
-                class="img-thumbnail img-fluid
-                alt="..."
-              />
-              <div
-                class="img-portfolio-text p-2 bg-light position-absolute w-100"
-              >
-                <h5 style="color: var(--main-color)">Branding2</h5>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="img-potfolio position-relative overflow-hidden">
-              <img
-                src="images/portfolio-3.jpg"
-                class="img-thumbnail img-fluid
-                alt="..."
-              />
-              <div
-                class="img-portfolio-text p-2 bg-light position-absolute w-100"
-              >
-                <h5 style="color: var(--main-color)">product1</h5>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="img-potfolio position-relative overflow-hidden special-case"
-            >
-              <img
-                src="images/portfolio-4.jpg"
-                class="img-thumbnail img-fluid
-                alt="..."
-              />
-              <div
-                class="img-portfolio-text p-2 bg-light position-absolute w-100"
-              >
-                <h5 style="color: var(--main-color)">product2</h5>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="img-potfolio position-relative overflow-hidden my-4">
-              <img
-                src="images/portfolio-5.jpg"
-                class="img-thumbnail img-fluid
-                alt="..."
-              />
-              <div
-                class="img-portfolio-text p-2 bg-light position-absolute w-100"
-              >
-                <h5 style="color: var(--main-color)">Branding3</h5>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="img-potfolio position-relative overflow-hidden">
-              <img
-                src="images/portfolio-6.jpg"
-                class="img-thumbnail img-fluid
-                alt="..."
-              />
-              <div
-                class="img-portfolio-text p-2 bg-light position-absolute w-100"
-              >
-                <h5 style="color: var(--main-color)">Branding1</h5>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="row">
-              <div
-                class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden mt-lg-0 mt-md-4 special-case"
-              >
-                <img
-                  src="images/portfolio-7.jpg"
-                  class="img-thumbnail img-fluid"
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="img-potfolio position-relative overflow-hidden">
+                <img loading="lazy"
+                  src="images/portfolio-1.jpg"
+                  class="img-thumbnail img-fluid
                   alt="..."
                 />
                 <div
                   class="img-portfolio-text p-2 bg-light position-absolute w-100"
                 >
-                  <h5 style="color: var(--main-color)">App2</h5>
+                  <h5 style="color: var(--main-color)">App1</h5>
                   <p>Lorem ipsum dolor sit.</p>
                 </div>
               </div>
-              <div
-                class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden my-lg-4 my-md-0 special-case"
-              >
-                <img
-                  src="images/portfolio-8.jpg"
-                  class="img-thumbnail img-fluid"
+              <div class="img-potfolio position-relative overflow-hidden my-4">
+                <img loading="lazy"
+                  src="images/portfolio-2.jpg"
+                  class="img-thumbnail img-fluid
                   alt="..."
                 />
                 <div
                   class="img-portfolio-text p-2 bg-light position-absolute w-100"
                 >
-                  <h5 style="color: var(--main-color)">App3</h5>
+                  <h5 style="color: var(--main-color)">Branding2</h5>
                   <p>Lorem ipsum dolor sit.</p>
                 </div>
               </div>
-              <div
-                class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden mt-lg-0 mt-md-4 m-md-auto special-case"
-              >
-                <img
-                  src="images/portfolio-9.jpg"
-                  class="img-thumbnail img-fluid"
+              <div class="img-potfolio position-relative overflow-hidden">
+                <img loading="lazy"
+                  src="images/portfolio-3.jpg"
+                  class="img-thumbnail img-fluid
                   alt="..."
                 />
                 <div
                   class="img-portfolio-text p-2 bg-light position-absolute w-100"
                 >
-                  <h5 style="color: var(--main-color)">product3</h5>
+                  <h5 style="color: var(--main-color)">product1</h5>
                   <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="img-potfolio position-relative overflow-hidden special-case"
+              >
+                <img loading="lazy"
+                  src="images/portfolio-4.jpg"
+                  class="img-thumbnail img-fluid
+                  alt="..."
+                />
+                <div
+                  class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                >
+                  <h5 style="color: var(--main-color)">product2</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+              <div class="img-potfolio position-relative overflow-hidden my-4">
+                <img loading="lazy"
+                  src="images/portfolio-5.jpg"
+                  class="img-thumbnail img-fluid
+                  alt="..."
+                />
+                <div
+                  class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                >
+                  <h5 style="color: var(--main-color)">Branding3</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+              <div class="img-potfolio position-relative overflow-hidden">
+                <img loading="lazy"
+                  src="images/portfolio-6.jpg"
+                  class="img-thumbnail img-fluid
+                  alt="..."
+                />
+                <div
+                  class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                >
+                  <h5 style="color: var(--main-color)">Branding1</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="row">
+                <div
+                  class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden mt-lg-0 mt-md-4 special-case"
+                >
+                  <img loading="lazy"
+                    src="images/portfolio-7.jpg"
+                    class="img-thumbnail img-fluid"
+                    alt="..."
+                  />
+                  <div
+                    class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                  >
+                    <h5 style="color: var(--main-color)">App2</h5>
+                    <p>Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden my-lg-4 my-md-0 special-case"
+                >
+                  <img loading="lazy"
+                    src="images/portfolio-8.jpg"
+                    class="img-thumbnail img-fluid"
+                    alt="..."
+                  />
+                  <div
+                    class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                  >
+                    <h5 style="color: var(--main-color)">App3</h5>
+                    <p>Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden mt-lg-0 mt-md-4 m-md-auto special-case"
+                >
+                  <img loading="lazy"
+                    src="images/portfolio-9.jpg"
+                    class="img-thumbnail img-fluid"
+                    alt="..."
+                  />
+                  <div
+                    class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                  >
+                    <h5 style="color: var(--main-color)">product3</h5>
+                    <p>Lorem ipsum dolor sit.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -690,7 +674,7 @@
         </div>
       </section>
 
-      <section class="section--8">
+      <section class="section section-transition section--8" id="Team">
         <div class="row w-100 m-auto p-lg-5 p-md-5">
           <div
             class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
@@ -941,7 +925,7 @@
         </div>
       </section>
 
-      <section class="section--9">
+      <section class="section section-transition section--9">
         <div class="row w-100 m-auto p-lg-4 p-md-5">
           <div
             class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
@@ -1052,7 +1036,7 @@
         </div>
       </section>
 
-      <section class="section--10">
+      <section class="section section-transition section--10">
         <div class="row w-100 m-auto p-lg-4 p-md-5">
           <div
             class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
@@ -1089,7 +1073,7 @@
         </div>
       </section>
 
-      <section class="section--11">
+      <section class="section section-transition section--11">
         <div class="row w-100 m-auto p-lg-4 p-md-5 d-flex justify-content-center">
           <div
             class="header-section w-100 col-12 d-flex w-100 mt-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
@@ -1250,7 +1234,7 @@
         </div>
       </section>
 
-      <section class="section--12">
+      <section class="section section-transition section--12" id="Contact">
         <div class="row w-100 m-auto p-lg-4 p-md-5 d-flex justify-content-center">
           <div class="header-section w-100 col-12 d-flex w-100 mt-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center">
             <h2>Contact</h2>
@@ -1302,7 +1286,7 @@
         </div>
       </section>
 
-      <section class="section--13">
+      <section class="section section--13">
         <div class="row w-100 m-auto p-lg-4 p-md-5 d-flex justify-content-center">
           <div class="col-lg-4 col-md-6 p-lg-5">
             <h3 class="fw-bolder px-1" style="color: var(--main-color);">ARCHA</h3>
@@ -1366,8 +1350,8 @@
         </div>
       </section>
     </div>
-    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
-    <script src="/fontawesome-free-6.7.2-web/js/all.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome-free-6.7.2-web/js/all.min.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>
