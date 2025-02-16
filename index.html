@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer="" src="script.js"></script>
+    <title>ARSHA</title>
+  </head>
+  <body>
+    <div class="contianer">
+      <section class="landing">
+        <header class="header px-5">
+          <!-- nav bar -->
+          <nav class="navbar fixed-top navbar-expand-lg px-5">
+            <div class="container-fluid">
+              <!-- logo -->
+              <a class="navbar-brand" href="#"
+                ><img src="images/logo.png" alt="logo Iamge" class="img-fluid"
+              /></a>
+              <!-- toggle btn -->
+              <button
+                class="navbar-toggler shadow-none border-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span style="color: white"
+                  ><i class="fa-solid fa-sliders" style="color: white"></i
+                ></span>
+              </button>
+              <!-- side bar -->
+              <div
+                class="sidebar offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul
+                    class="navbar-nav nav-landing justify-content-end flex-grow-1 pe-3 gap-3"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-light active"
+                        aria-current="page"
+                        href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link text-light dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item text-black-50" href="#"
+                            >Dropdown 1</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-black-50" href="#"
+                            >Dropdown 2</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-black-50" href="#"
+                            >Dropdown 3</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-black-50" href="#"
+                            >Dropdown 4</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-black-50" href="#"
+                            >Dropdown 5</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <div class="button_nav_bar d-flex align-content-center">
+                    <a class="text-light btn rounded-pill px-3" href="#"
+                      >Get Start</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="homePage p-lg-5 py-4 px-4">
+          <div class="row">
+            <div
+              class="text-homepage col-lg-5 d-flex flex-column justify-content-center align-items-start order-2 order-lg-1"
+            >
+              <h1 class="text-light fs-1" style="font-weight: bold">
+                Better Solutions For Your Business
+              </h1>
+              <p
+                class="fs-4 fa-bold py-2"
+                style="color: gray; font-weight: bold"
+              >
+                We are team of talented designers making websites with Bootstrap
+              </p>
+              <div
+                class="btn-group gap-3"
+                role="group"
+                aria-label="Basic example"
+              >
+                <a
+                  class="text-light btn rounded-pill px-3 fs-4 fa-bold"
+                  href="#"
+                  >Get Start</a
+                >
+                <a
+                  class="vidoe-player text-light btn rounded-pill fs-4 fa-bold d-flex gap-2"
+                  href="#"
+                  ><span><i class="fa-regular fa-circle-play"></i></span> Watch
+                  Video</a
+                >
+              </div>
+            </div>
+            <div
+              class="img-homepage col-lg-6 container-fluid order-1 order-lg-2 p-lg-0 py-5"
+            >
+              <img
+                src="images/hero-img.png"
+                alt=""
+                class="img-homepage img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--2">
+        <ul
+          class="section2-nav nav d-flex justify-content-evenly flex-nowrap overflow-hidden"
+        >
+          <li class="nav-item py-3">
+            <img src="images/hero-img1.png" class="img-fluid" alt="" />
+          </li>
+          <li class="nav-item py-3">
+            <img src="images/client-2.png" class="img-fluid" alt="" />
+          </li>
+          <li class="nav-item py-3">
+            <img src="images/client-3.png" class="img-fluid" alt="" />
+          </li>
+          <li class="nav-item py-3">
+            <img src="images/client-4.png" class="img-fluid" alt="" />
+          </li>
+        </ul>
+        <div class="row w-100 p-lg-5 m-auto mt-1">
+          <div
+            class="header-section col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
+          >
+            <h2>About Us</h2>
+            <div class="line"></div>
+          </div>
+          <div
+            class="text-section-2 col-12 col-lg-6 px-lg-5 px-md-4 px-sm-0 py-4 pt-5"
+          >
+            <p class="">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              accusamus aut commodi non repellendus! Fugiat.
+            </p>
+            <p class="">
+              <span class="px-1" style="color: var(--second-color)"
+                ><i class="fa-regular fa-circle-check"></i></span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?
+            </p>
+            <p class="">
+              <span class="px-1" style="color: var(--second-color)"
+                ><i class="fa-regular fa-circle-check"></i></span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?
+            </p>
+            <p class="">
+              <span class="px-1" style="color: var(--second-color)"
+                ><i class="fa-regular fa-circle-check"></i></span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div
+            class="text-section-2 col-12 col-lg-6 px-lg-5 px-md-4 px-sm-0 py-4 pt-lg-5"
+          >
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              quibusdam modi eveniet officiis odio harum ad voluptate eaque!
+              Fugit aliquid minima laborum! Obcaecati, sed perspiciatis? Maiores
+              molestiae maxime quos perferendis.
+            </p>
+            <a href="" class="btn px-3 my-2"
+              >Read More
+              <span><i class="fa-solid fa-arrow-right px-2"></i></span
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--3">
+        <div class="row w-100 m-auto">
+          <!-- Accordion -->
+          <div class="col-lg-6 p-5 order-2 order-lg-1 land-section-3">
+            <h2 style="color: var(--main-color)">
+              Eum ipsam laborum deleniti
+              <span class="fw-bolder">velit pariatur architecto aut nihil</span>
+            </h2>
+            <p style="color: gray" class="py-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+              aute irure dolor in reprehenderit
+            </p>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button button-accordion"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <span style="color: var(--second-color)" class="pe-2"
+                      >01</span
+                    >
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                    volutpat lacus laoreet non curabitur gravida. Venenatis
+                    lectus magna fringilla urna porttitor rhoncus dolor purus
+                    non.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button button-accordion"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <span style="color: var(--second-color)" class="pe-2"
+                      >02</span
+                    >
+                    Feugiat scelerisque varius morbi enim nunc faucibus a
+                    pellentesque?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque
+                    habitant morbi. Id interdum velit laoreet id donec ultrices.
+                    Fringilla phasellus faucibus scelerisque eleifend donec
+                    pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                    ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button button-accordion"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <span style="color: var(--second-color)" class="pe-2"
+                      >03</span
+                    >
+                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem
+                    nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                    pellentesque eu tincidunt. Lectus urna duis convallis
+                    convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 p-5 container-fluid order-1 order-lg-2 m-auto d-flex justify-content-center land-section-3"
+          >
+            <img
+              src="images/why-us.png"
+              alt=""
+              class="img-section-3 img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section--4">
+        <div class="row w-100 m-auto">
+          <div
+            class="col-lg-6 p-lg-5 container-fluid m-auto d-flex justify-content-center land-section-4"
+          >
+            <img
+              src="images/skills.png"
+              alt=""
+              class="img-section-3 img-fluid"
+            />
+          </div>
+          <div class="col-lg-6 p-5 land-section-4">
+            <h2 style="color: var(--main-color)">
+              Voluptatem dignissimos provident quasi corporis voluptas
+            </h2>
+            <p style="color: gray" class="py-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="prog py-2">
+              <p style="color: gray">HTML</p>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="prog py-2">
+              <p style="color: gray">CSS</p>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="prog py-2">
+              <p style="color: gray">JAVASCRIPT</p>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="prog py-2">
+              <p style="color: gray">PHOTOSHOP</p>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 55%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--5">
+        <div class="row w-100 m-auto p-4">
+          <div
+            class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
+          >
+            <h2>SERVICES</h2>
+            <p class="p-1">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+            <div class="line" style="background-color: white"></div>
+          </div>
+          <div class="col-lg-3 col-md-6 py-4 card-section-5">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-link-slash p-4 pt-4" style="scale: 2"></i>
+                <h3>Lorem, ipsum.</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Possimus a provident laborum inventore consectetur magnam!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 py-4 card-section-5">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-link-slash p-4 pt-4" style="scale: 2"></i>
+                <h3>Lorem, ipsum.</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Possimus a provident laborum inventore consectetur magnam!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 py-4 card-section-5">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-link-slash p-4 pt-4" style="scale: 2"></i>
+                <h3>Lorem, ipsum.</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Possimus a provident laborum inventore consectetur magnam!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 py-4 card-section-5">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-link-slash p-4 pt-4" style="scale: 2"></i>
+                <h3>Lorem, ipsum.</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Possimus a provident laborum inventore consectetur magnam!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--6">
+        <div
+          class="img-section-6 row w-100 m-auto p-lg-4 p-md-5 position-relative"
+        >
+          <div class="col-lg-8 py-lg-5" style="z-index: 3">
+            <h3
+              class="fw-bolder text-center text-lg-start"
+              style="color: white"
+            >
+              Call To Action
+            </h3>
+            <p style="color: white">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center py-lg-5"
+            style="z-index: 3"
+          >
+            <a href="" class="btn rounded-pill p-2">Call To Action</a>
+          </div>
+          <div class="layout position-absolute w-100 h-100"></div>
+        </div>
+      </section>
+
+      <section class="section--7">
+        <div class="row w-100 m-auto p-lg-4 p-md-5">
+          <div
+            class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
+          >
+            <h2>PORTFOLIO</h2>
+            <p class="p-1">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+            <div class="line"></div>
+            <div
+              class="btn-group pt-5 gap-2"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn border-0 rounded-pill">
+                All
+              </button>
+              <button type="button" class="btn border-0 rounded-pill">
+                App
+              </button>
+              <button type="button" class="btn border-0 rounded-pill">
+                Card
+              </button>
+              <button type="button" class="btn border-0 rounded-pill">
+                Web
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="img-potfolio position-relative overflow-hidden">
+              <img
+                src="images/portfolio-1.jpg"
+                class="img-thumbnail img-fluid
+                alt="..."
+              />
+              <div
+                class="img-portfolio-text p-2 bg-light position-absolute w-100"
+              >
+                <h5 style="color: var(--main-color)">App1</h5>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="img-potfolio position-relative overflow-hidden my-4">
+              <img
+                src="images/portfolio-2.jpg"
+                class="img-thumbnail img-fluid
+                alt="..."
+              />
+              <div
+                class="img-portfolio-text p-2 bg-light position-absolute w-100"
+              >
+                <h5 style="color: var(--main-color)">Branding2</h5>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="img-potfolio position-relative overflow-hidden">
+              <img
+                src="images/portfolio-3.jpg"
+                class="img-thumbnail img-fluid
+                alt="..."
+              />
+              <div
+                class="img-portfolio-text p-2 bg-light position-absolute w-100"
+              >
+                <h5 style="color: var(--main-color)">product1</h5>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="img-potfolio position-relative overflow-hidden special-case"
+            >
+              <img
+                src="images/portfolio-4.jpg"
+                class="img-thumbnail img-fluid
+                alt="..."
+              />
+              <div
+                class="img-portfolio-text p-2 bg-light position-absolute w-100"
+              >
+                <h5 style="color: var(--main-color)">product2</h5>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="img-potfolio position-relative overflow-hidden my-4">
+              <img
+                src="images/portfolio-5.jpg"
+                class="img-thumbnail img-fluid
+                alt="..."
+              />
+              <div
+                class="img-portfolio-text p-2 bg-light position-absolute w-100"
+              >
+                <h5 style="color: var(--main-color)">Branding3</h5>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="img-potfolio position-relative overflow-hidden">
+              <img
+                src="images/portfolio-6.jpg"
+                class="img-thumbnail img-fluid
+                alt="..."
+              />
+              <div
+                class="img-portfolio-text p-2 bg-light position-absolute w-100"
+              >
+                <h5 style="color: var(--main-color)">Branding1</h5>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="row">
+              <div
+                class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden mt-lg-0 mt-md-4 special-case"
+              >
+                <img
+                  src="images/portfolio-7.jpg"
+                  class="img-thumbnail img-fluid"
+                  alt="..."
+                />
+                <div
+                  class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                >
+                  <h5 style="color: var(--main-color)">App2</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+              <div
+                class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden my-lg-4 my-md-0 special-case"
+              >
+                <img
+                  src="images/portfolio-8.jpg"
+                  class="img-thumbnail img-fluid"
+                  alt="..."
+                />
+                <div
+                  class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                >
+                  <h5 style="color: var(--main-color)">App3</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+              <div
+                class="col-lg-12 col-md-6 img-potfolio position-relative overflow-hidden mt-lg-0 mt-md-4 m-md-auto special-case"
+              >
+                <img
+                  src="images/portfolio-9.jpg"
+                  class="img-thumbnail img-fluid"
+                  alt="..."
+                />
+                <div
+                  class="img-portfolio-text p-2 bg-light position-absolute w-100"
+                >
+                  <h5 style="color: var(--main-color)">product3</h5>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--8">
+        <div class="row w-100 m-auto p-lg-5 p-md-5">
+          <div
+            class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
+          >
+            <h2>TEAM</h2>
+            <p class="p-1">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+            <div class="line"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card mb-4 py-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img
+                    src="images/team-1.jpg"
+                    class="img-fluid rounded-pill w-75"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5
+                      class="card-title fw-bolder"
+                      style="color: var(--main-color)"
+                    >
+                      Walter White
+                    </h5>
+                    <p
+                      class="card-text position-relative line-team-card fw-bolder"
+                    >
+                      Chief Executive Officer
+                    </p>
+                    <p>
+                      Explicabo voluptatem mollitia et repellat qui dolorum
+                      quasi
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-x-twitter"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-facebook"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-instagram"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-linkedin"
+                          ></i
+                        ></span>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4 py-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img
+                    src="images/team-3 (1).jpg"
+                    class="img-fluid rounded-pill w-75"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5
+                      class="card-title fw-bolder"
+                      style="color: var(--main-color)"
+                    >
+                      William Anderson
+                    </h5>
+                    <p
+                      class="card-text position-relative line-team-card fw-bolder"
+                    >
+                      CTO
+                    </p>
+                    <p>
+                      Quisquam facilis cum velit laborum corrupti fuga rerum
+                      quia
+                    </p>
+                    <div class="card-text">
+                      <small class="text-body-secondary">
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-x-twitter"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-facebook"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-instagram"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-linkedin"
+                          ></i
+                        ></span>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card mb-4 py-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img
+                    src="images/team-4.jpg"
+                    class="img-fluid rounded-pill w-75"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5
+                      class="card-title fw-bolder"
+                      style="color: var(--main-color)"
+                    >
+                      Sarah Jhonson
+                    </h5>
+                    <p
+                      class="card-text position-relative line-team-card fw-bolder"
+                    >
+                      Chief Executive Officer
+                    </p>
+                    <p>
+                      Explicabo voluptatem mollitia et repellat qui dolorum
+                      quasi
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-x-twitter"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-facebook"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-instagram"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-linkedin"
+                          ></i
+                        ></span>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4 py-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img
+                    src="images/team-2.jpg"
+                    class="img-fluid rounded-pill w-75"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5
+                      class="card-title fw-bolder"
+                      style="color: var(--main-color)"
+                    >
+                      Amanda Jepson
+                    </h5>
+                    <p
+                      class="card-text position-relative line-team-card fw-bolder"
+                    >
+                      Accountant
+                    </p>
+                    <p>
+                      Quisquam facilis cum velit laborum corrupti fuga rerum
+                      quia
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-x-twitter"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-facebook"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-instagram"
+                          ></i
+                        ></span>
+                        <span class="px-3"
+                          ><i
+                            style="scale: 1.6; cursor: pointer"
+                            class="icon-card-team fa-brands fa-linkedin"
+                          ></i
+                        ></span>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--9">
+        <div class="row w-100 m-auto p-lg-4 p-md-5">
+          <div
+            class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
+          >
+            <h2>Pricing</h2>
+            <div class="line my-1" style="background-color: white"></div>
+            <p class="p-1">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <div class="nonselected-sups card border-light mb-3">
+              <div class="card-body">
+                <p class="card-text fs-4 pt-3 fw-bolder" style="color: var(--main-color)">
+                  Free Plan
+                </p>
+                <h3 class="card-title fs-1" style="color: var(--second-color);">
+                  <sup class="fs-3">$</sup>0<sub class="fs-5" style="color: gray;">/month</sub>
+                </h3>
+                <p class="card-text py-2 pt-4">
+                  ✅ Quam adipiscing vitae proin.
+                </p>
+                <p class="card-text py-2">
+                  ✅ Nec feugiat nisl pretium.
+                </p>
+                <p class="card-text py-2">
+                  ✅ Nulla at volutpat diam uteera.
+                </p>
+                <p class="card-text py-2">
+                  ❌ <span class="text-decoration-line-through">Pharetra massa massa ultricies.</span>
+                </p>
+                <p class="card-text py-2 pb-4">
+                  ❌ <span class="text-decoration-line-through">Massa ultricies mi quis hendrerit.</span>
+                </p>
+                <div class="btn-section-9 d-flex align-content-center pb-3">
+                  <a class="btn rounded-pill px-3" href="#"
+                    >Buy Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="selected-sups card border-light mb-3">
+              <div class="card-body">
+                <p class="card-text fs-4 pt-3 fw-bolder" style="color: var(--main-color)">
+                  Business Plan
+                </p>
+                <h3 class="card-title fs-1" style="color: var(--second-color);">
+                  <sup class="fs-3">$</sup>29<sub class="fs-5" style="color: gray;">/month</sub>
+                </h3>
+                <p class="card-text py-2 pt-4">
+                  ✅ Quam adipiscing vitae proin.
+                </p>
+                <p class="card-text py-2">
+                  ✅ Nec feugiat nisl pretium.
+                </p>
+                <p class="card-text py-2">
+                  ✅ Nulla at volutpat diam uteera.
+                </p>
+                <p class="card-text py-2">
+                  ✅ Pharetra massa massa ultricies.
+                </p>
+                <p class="card-text py-2 pb-4">
+                  ✅ Massa ultricies mi quis hendrerit.
+                </p>
+                <div class="btn-section-9 d-flex align-content-center pb-3">
+                  <a class="btn rounded-pill px-3" style="background-color: var(--second-color); color: white;" href="#"
+                    >Buy Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="nonselected-sups card border-light mb-3">
+              <div class="card-body">
+                <p class="card-text fs-4 pt-3 fw-bolder" style="color: var(--main-color)">
+                  Developer Plan
+                </p>
+                <h3 class="card-title fs-1" style="color: var(--second-color);">
+                  <sup class="fs-3">$</sup>49<sub class="fs-5" style="color: gray;">/month</sub>
+                </h3>
+                <p class="card-text py-2 pt-4">
+                  ✅ Quam adipiscing vitae proin.
+                </p>
+                <p class="card-text py-2">
+                  ✅ Nec feugiat nisl pretium.
+                </p>
+                <p class="card-text py-2">
+                  ✅ Nulla at volutpat diam uteera.
+                </p>
+                <p class="card-text py-2">
+                  ✅ Pharetra massa massa ultricies.
+                </p>
+                <p class="card-text py-2 pb-4">
+                  ✅ Massa ultricies mi quis hendrerit.
+                </p>
+                <div class="btn-section-9 d-flex align-content-center pb-3">
+                  <a class="btn rounded-pill px-3" href="#"
+                    >Buy Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--10">
+        <div class="row w-100 m-auto p-lg-4 p-md-5">
+          <div
+            class="header-section w-100 col-12 d-flex w-100 my-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
+          >
+            <h2>Testimonials</h2>
+            <div class="line my-1"></div>
+            <p class="p-1">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+          <div class="col-lg-11 m-auto">
+            <div class="row row-cols-1 row-cols-md-2 gap-3 d-flex flex-column justify-content-center align-items-center position-relative">
+              <div class="col d-flex justify-content-center align-items-center">
+                <div class="card" style="border: none; background-color: inherit;">
+                  <img src="images/team-1.jpg" class="d-flex justify-content-center card-img-top rounded-circle img-fluid img-section-10 m-auto" alt="...">
+                  <div class="card-body w-100">
+                    <p class="card-text mb-0 fs-4 fw-bolder w-100" style="color: var(--main-color);">Matt Brandon</p>
+                    <p class="card-text mb-0 d-flex justify-content-center w-100">Designer</p>
+                    <p class="card-text d-flex justify-content-center w-100">⭐⭐⭐⭐⭐</p>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text w-75"><span><i class="fa-solid fa-quote-left pe-3"></i></span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur inventore quae praesentium voluptatibus! Dolores magnam numquam nobis qui? Omnis quis vero numquam inventore impedit quidem! Dolor odit modi labore sit maiores assumenda repellat aperiam sapiente.<span><i class="fa-solid fa-quote-right ps-3"></i></span></p>
+              <div class="btn-toolbar d-flex justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">2</button>
+                  <button type="button" class="btn">3</button>
+                  <button type="button" class="btn">4</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--11">
+        <div class="row w-100 m-auto p-lg-4 p-md-5 d-flex justify-content-center">
+          <div
+            class="header-section w-100 col-12 d-flex w-100 mt-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center"
+          >
+            <h2>Frequently Asked Questions</h2>
+            <div class="line my-2 mb-3" style="background-color: white;"></div>
+            <p class="w-75 px-3">
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+          <div class="col-lg-11 p-3 order-2 order-lg-1 land-section-3">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button button-accordion"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <span style="color: var(--second-color)" class="pe-2"
+                      ><i class="fa-regular fa-circle-question"></i></span
+                    >
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-1">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                    volutpat lacus laoreet non curabitur gravida. Venenatis
+                    lectus magna fringilla urna porttitor rhoncus dolor purus
+                    non.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button button-accordion"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <span style="color: var(--second-color)" class="pe-2"
+                      ><i class="fa-regular fa-circle-question"></i></span
+                    >
+                    Feugiat scelerisque varius morbi enim nunc faucibus a
+                    pellentesque?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-1">
+                    Dolor sit amet consectetur adipiscing elit pellentesque
+                    habitant morbi. Id interdum velit laoreet id donec ultrices.
+                    Fringilla phasellus faucibus scelerisque eleifend donec
+                    pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                    ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button button-accordion"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <span style="color: var(--second-color)" class="pe-2"
+                      ><i class="fa-regular fa-circle-question"></i></span
+                    >
+                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-1">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem
+                    nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                    pellentesque eu tincidunt. Lectus urna duis convallis
+                    convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button button-accordion"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <span style="color: var(--second-color)" class="pe-2"
+                      ><i class="fa-regular fa-circle-question"></i></span
+                    >
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-1">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button button-accordion"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    <span style="color: var(--second-color)" class="pe-2"
+                      ><i class="fa-regular fa-circle-question"></i></span
+                    >
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-1">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--12">
+        <div class="row w-100 m-auto p-lg-4 p-md-5 d-flex justify-content-center">
+          <div class="header-section w-100 col-12 d-flex w-100 mt-3 p-3 py-4 border-0 fw-bold flex-column justify-content-center align-items-center">
+            <h2>Contact</h2>
+            <div class="line my-2 mb-3"></div>
+            <p>
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="selected-sups card mb-3">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <div class="part d-flex p-3 gap-4 align-items-center">
+                  <i class="fa-solid fa-location-dot" style="scale: 2;"></i>
+                  <p class="text-card mb-0">Address<span class="d-block">Egypt,Cairo</span></p>
+                </div>
+                <div class="part d-flex p-3 gap-4 align-items-center">
+                  <i class="fa-solid fa-phone" style="scale: 2;"></i>
+                  <p class="text-card mb-0">Call Us<span class="d-block">+20 1280650152</span></p>
+                </div>
+                <div class="part d-flex p-3 gap-4 align-items-center mb-3">
+                  <i class="fa-solid fa-envelope" style="scale: 2;"></i>
+                  <p class="text-card mb-0">Email Us<span class="d-block">mohammedayman2534@gmail.com</span></p>
+                </div>
+                <div class="ratio ratio-21x9 py-4">
+                  <iframe class="container-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55250.95804673018!2d31.308245835944366!3d30.06023467809441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458410034ac4d8f%3A0xea346572bc09770b!2z2YbYp9iv2Yog2KfZhNiy2YXYp9mE2YM!5e0!3m2!1sar!2seg!4v1739658402699!5m2!1sar!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="selected-sups card mb-3">
+              <div class="input-group p-3 pt-5 gap-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                <input type="text" class="form-control" placeholder="Your@Email" aria-label="Server">
+              </div>
+              <div class="input-group p-3">
+                <input type="text" class="form-control" placeholder="Subject" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group p-3">
+                <textarea class="form-control" placeholder="Message" aria-label="With textarea" style="height: 297px;"></textarea>
+              </div>
+              <div class="button_nav_bar p-3 pm-5 m-auto d-flex align-content-center">
+                <button class="text-light btn rounded-pill px-3" type="submit">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--13">
+        <div class="row w-100 m-auto p-lg-4 p-md-5 d-flex justify-content-center">
+          <div class="col-lg-4 col-md-6 p-lg-5">
+            <h3 class="fw-bolder px-1" style="color: var(--main-color);">ARCHA</h3>
+            <p class="fw-bolder px-1">Egypt, Cairo</p>
+            <p><span class="fw-bolder px-1">Phone</span>:+20 1280650152</p>
+            <p><span class="fw-bolder px-1">Email</span>:mohammedayman2534@gmail.com</p>
+          </div>
+          <div class="col-lg-2 col-md-3 p-lg-5">
+            <h5 style="color: var(--main-color);" class="fw-bolder">Useful Links</h5>
+            <ul class="list-unstyled">
+              <li class="py-1"><a class="text-decoration-none" href="#"><span style="color: var(--second-color);">▷</span> Home</a></li>
+              <li class="py-1"><a class="text-decoration-none" href="#"><span style="color: var(--second-color);">▷</span> About Us</a></li>
+              <li class="py-1"><a class="text-decoration-none" href="#"><span style="color: var(--second-color);">▷</span> Home</a></li>
+              <li class="py-1"><a class="text-decoration-none" href="#"><span style="color: var(--second-color);">▷</span> Home</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 p-lg-5">
+            <h5 style="color: var(--main-color);" class="fw-bolder">Our Services</h5>
+            <ul class="list-unstyled">
+              <li class="py-1"><a class="text-decoration-none" href="#"><span style="color: var(--second-color);">▷</span> Web Design</a></li>
+              <li class="py-1"><a class="text-decoration-none" href="#"><span style="color: var(--second-color);">▷</span> Web Development</a></li>
+              <li class="py-1"><a class="text-decoration-none" href="#"><span style="color: var(--second-color);">▷</span> Product Manage</a></li>
+              <li class="py-1"><a class="text-decoration-none" href="#"><span style="color: var(--second-color);">▷</span> Marketing</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 p-lg-5">
+            <h5 class="fw-bolder px-1" style="color: var(--main-color);">Follow Us</h5>
+            <p class="fw-bolder px-1">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="card-text">
+              <small class="text-body-secondary">
+                <span class="px-2"
+                  ><i
+                    style="scale: 1.6; cursor: pointer"
+                    class="icon-card-team fa-brands fa-x-twitter"
+                  ></i
+                ></span>
+                <span class="px-2"
+                  ><i
+                    style="scale: 1.6; cursor: pointer"
+                    class="icon-card-team fa-brands fa-facebook"
+                  ></i
+                ></span>
+                <span class="px-2"
+                  ><i
+                    style="scale: 1.6; cursor: pointer"
+                    class="icon-card-team fa-brands fa-instagram"
+                  ></i
+                ></span>
+                <span class="px-2"
+                  ><i
+                    style="scale: 1.6; cursor: pointer"
+                    class="icon-card-team fa-brands fa-linkedin"
+                  ></i
+                ></span>
+              </small>
+            </div>
+          </div>
+          <div class="col-12 pt-lg-0 pt-md-5 d-flex justify-content-center">
+            <p class="fs-5">© Copyright <span class="fw-bolder" style="color: var(--main-color);">Arsha</span> All Rights Reserved Designed by BootstrapMade</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="/fontawesome-free-6.7.2-web/js/all.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
